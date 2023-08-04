@@ -3,27 +3,141 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Time Tracking Dashboard</title>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="content">
-        <!-- div one -->
-        <div class="one">
+    <main>
+      <div class="events">
+        <div class="profile-container">
           <div class="profile">
-            <img src="./images/image-jeremy.png" alt="" />
-            <div class="header">
-              <h3>Report for</h3>
-              <h1>Jeremy</h1>
-              <h1>Robson</h1>
+            <img
+              src="images/image-jeremy.png"
+              class="profile-picture"
+              alt="jeremy"
+            />
+            <div class="title">
+              <p>Report for</p>
+              <h3>Jeremy Robson</h3>
             </div>
           </div>
-          <h2>Daily</h2>
-          <h2>Weekly</h2>
-          <h2>Monthly</h2>
+          <div class="periods">
+            <a href="#">Daily</a>
+            <a href="#">Weekly</a>
+            <a href="#">Monthly</a>
+          </div>
+        </div>
+        <div class="work-container evt1">
+          <div class="icon">
+            <img src="images/icon-work.svg" alt="work-icon" />
+          </div>
+          <div class="text-container">
+            <div class="title-and-ellipsis">
+              <p>Work</p>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis-icon" />
+            </div>
+            <div class="hours">
+              <p>32hrs</p>
+              <p>Last Week - 36hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="play-container evt1">
+          <div class="icon">
+            <img src="images/icon-play.svg" alt="play-svg" />
+          </div>
+          <div class="text-container">
+            <div class="title-and-ellipsis">
+              <p>Play</p>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis-icon" />
+            </div>
+            <div class="hours">
+              <p>10hr</p>
+              <p>Last Week - 8hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="study-container evt1">
+          <div class="icon">
+            <img src="images/icon-study.svg" alt="study-svg" />
+          </div>
+          <div class="text-container">
+            <div class="title-and-ellipsis">
+              <p>Study</p>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis-icon" />
+            </div>
+            <div class="hours">
+              <p>4hrs</p>
+              <p>Last Week - 7hr</p>
+            </div>
+          </div>
+        </div>
+        <div class="exercise-container evt1">
+          <div class="icon">
+            <img src="images/icon-exercise.svg" alt="exercise-svg" />
+          </div>
+          <div class="text-container">
+            <div class="title-and-ellipsis">
+              <p>Exercise</p>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis-icon" />
+            </div>
+            <div class="hours">
+              <p>4hr</p>
+              <p>Last Week - 5hr</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-container evt1">
+          <div class="icon">
+            <img src="images/icon-social.svg" alt="social-svg" />
+          </div>
+          <div class="text-container">
+            <div class="title-and-ellipsis">
+              <p>Social</p>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis-icon" />
+            </div>
+            <div class="hours">
+              <p>5hr</p>
+              <p>Last Week - 3hrs</p>
+            </div>
+          </div>
+        </div>
+        <div class="selfcare-container evt1">
+          <div class="icon">
+            <img src="images/icon-self-care.svg" alt="self-care-svg" />
+          </div>
+          <div class="text-container">
+            <div class="title-and-ellipsis">
+              <p>Self Care</p>
+              <img src="images/icon-ellipsis.svg" alt="ellipsis-icon" />
+            </div>
+            <div class="hours">
+              <p>2hrs</p>
+              <p>Last Week - 2hr</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>
